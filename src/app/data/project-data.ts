@@ -51,14 +51,14 @@ export const projects: Project[] = [
     tag: "DESKTOP UX/UI · HARDWARE DIAGNOSTICS",
     title: "Lenovo Diagnostics for ARM",
     shortTitle: "Lenovo Diagnostics",
-    desc: "A proprietary hardware diagnostics application that ships with Lenovo devices.",
-    fullDesc:
-      "opment and governance of a scalable Design System using advanced Figma features (variables, libraries, component architecture), accelerating iteration and ensuring cross-team consistency.\nAdaptation of desktop interfaces to touchscreen contexts, enhancing interaction reliability across hardware environments.\nCoordination and leadership of a UX/UI team, defining experience goals per release cycle and aligning design decisions with engineering and business stakeholders in Agile environments.",
-    img: "https://images.unsplash.com/photo-1771922748624-b205cf5d002d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    desc: "Desktop diagnostics application shipped with Lenovo Arm laptops, supporting 100,000+ monthly users in technical troubleshooting scenarios.",
+    fullDesc: "Led UX/UI strategy for a complex diagnostics product used across multiple hardware environments\nRedesigned diagnostic workflows, improving usability and reducing cognitive load in technical scenarios\nImproved accessibility compliance by 60% through audits and targeted redesign initiatives\nDeveloped and governed a scalable Design System in Figma (variables, libraries, component architecture), accelerating development iterations by 20% \\Collaborated with engineers and stakeholders in Agile environments to align product and technical constraints",
+      // "Development and governance of a scalable Design System using advanced Figma features (variables, libraries, component architecture), accelerating iteration and ensuring cross-team consistency.\nAdaptation of desktop interfaces to touchscreen contexts, enhancing interaction reliability across hardware environments.\nCoordination and leadership of a UX/UI team, defining experience goals per release cycle and aligning design decisions with engineering and business stakeholders in Agile environments.",
+    img: "src/app/imgs/CoverLDAR.png",
     bg: "#dfe7f5",
     accentColor: "#4a6fa5",
-    role: "Lead UX/UI Designer — end-to-end product UX, interface design, and design system decisions",
-    tools: ["Figma", "Jira", "Confluence", "AMP"],
+    role: "Product Designer leading UX/UI strategy, design systems, and workflow redesign.",
+    tools: ["Figma", "FigJam", "Jira", "Confluence", "AMP", "UX Research"],
     timeline: "Confidential",
     deliverables: ["Redesigned design system", "Visual identity", "QoL UX improvements", "Accessibility"],
     confidential: true,
@@ -66,8 +66,8 @@ export const projects: Project[] = [
       "This case study includes confidential product work. The project remains in the portfolio for context, but detailed process, constraints, and outcomes are intentionally obscured.",
     impacts: [
       { value: "60%+", label: "Accessibility compliance improvement" },
-      { value: "Thousands", label: "Users worldwide" },
-      { value: "20%", label: "Faster implementation" },
+      { value: "100,000+", label: "Monthly users supported" },
+      { value: "20%+", label: "Development efficiency" },
     ],
     outcome: {
       metrics: [
@@ -81,114 +81,37 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: "folio-daily",
+    slug: "lenovo-diagnostics",
     tag: "EDITORIAL UX/UI · MOBILE APP",
-    title: "Folio Daily",
-    shortTitle: "Folio Daily",
-    desc: "A reading experience shaped through typography, interface pacing, and focused mobile interaction design.",
-    fullDesc:
-      "Folio Daily is a reading experience shaped through typography, interface pacing, and focused mobile interaction design. It aims to provide a calm and immersive reading environment, free from distractions and interruptions.",
-    img: "https://images.unsplash.com/photo-1669850850090-54237ab4a4a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    title: "Lenovo Diagnostics Project (NDA)",
+    shortTitle: "Lenovo Diagnostics",
+    desc: "Confidential initiative focused on adapting a desktop diagnostics experience to new interaction models, devices, and user profiles.",
+    fullDesc: "Adapted desktop interfaces to touchscreen environments, improving interaction reliability across devices.\nLed a major interface overhaul targeting a new user demographic, redefining interaction patterns and UI structure.\nDeveloped and scaled a Visual Identity and a Design System to ensure consistency across evolving product requirements.",
+      // "Folio Daily is a reading experience shaped through typography, interface pacing, and focused mobile interaction design. It aims to provide a calm and immersive reading environment, free from distractions and interruptions.",
+    img: "src/app/imgs/CoverLD.png",
     bg: "#ecdcc8",
     accentColor: "#8b6a3e",
-    role: "UX/UI Designer — product interface, reading experience, and visual direction",
-    team: "Team of 3: founder/PM, 1 iOS engineer, 1 Android engineer",
-    timeline: "10 weeks",
+    role: "Product Designer responsible for interface strategy, system scalability, and interaction redesign.",
+    timeline: "Confidential",
     tools: ["Figma", "Principle", "Typetura", "Notion"],
-    deliverables: ["iOS App", "Android App", "Typography System", "Content Guidelines"],
-    challenge:
-      "Long-form reading is in decline — not because people don't want to read, but because apps are designed to interrupt, monetise attention, and optimise for clicks. Folio Daily set out to be the opposite: an app that slows you down, removes friction, and makes you feel the same quiet focus you get from a physical book.",
-    challengeQuote:
-      '"Every app I try pushes me towards shorter content. I just want something that trusts me to read a 4,000-word essay."',
-    constraints: [
-      "Pre-seed budget — no marketing spend, growth had to come from craft",
-      "Variable font rendering inconsistent across older Android devices",
-      "Content licensing limited to 40 publishers at launch",
-      "10 weeks from kickoff to TestFlight build",
-    ],
-    hypothesis:
-      "If we treat typography and silence as the core product (not a polish layer), readers will associate Folio with the calm of physical reading — and retention will outperform notification-driven competitors.",
-    rejectedDirections: [
-      {
-        title: "Algorithmic 'For You' feed",
-        reason: "Conflicted with the anti-distraction thesis. Replaced with a small, human-curated daily list.",
-      },
-      {
-        title: "Social highlights and comments",
-        reason: "Tested with beta group — 9 of 12 said it would 'turn this into another app I leave'. Cut entirely.",
-      },
-      {
-        title: "Audio narration as primary mode",
-        reason: "Compelling but doubled engineering scope. Parked for v2 instead of compromising the reading experience.",
-      },
-    ],
-    process: [
-      {
-        phase: "01 / DISCOVERY",
-        title: "340 readers surveyed. One dominant theme: distraction.",
-        body: "I surveyed 340 self-identified avid readers and conducted 12 in-depth interviews. 78% said existing reading apps interrupted their experience with notifications, ads, or aggressive recommendations. I mapped three reader archetypes — the Deep Diver, the Commuter, and the Weekend Reader — each with distinct environment, lighting, and session-length needs that the design would need to serve simultaneously.",
-        insight:
-          "Key finding: users who read in bed (41%) overwhelmingly preferred warm, dim interfaces but couldn't find apps that remembered their preference between sessions.",
-        imgs: [
-          "https://images.unsplash.com/photo-1565687950692-520fa91191d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-          "https://images.unsplash.com/photo-1576153192281-d558108925bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-        ],
-        imgLayout: "duo",
-      },
-      {
-        phase: "02 / CONCEPT SKETCHES",
-        title: "Borrowing from print — with intention",
-        body: "I filled three A3 sketchbooks exploring typographic hierarchy borrowed from physical publishing: drop caps, pull quotes, section ornaments, and generous leading. Three reading modes were sketched — Minimal (text only), Ambient (subtle background texture), and Focus (full-screen with all chrome hidden). I also explored three typeface pairings before settling on a variable serif for body and a geometric sans for UI.",
-        imgs: [
-          "https://images.unsplash.com/photo-1576153192396-180ecef2a715?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-        ],
-        imgLayout: "wide",
-      },
-      {
-        phase: "03 / WIREFRAMES",
-        title: "Designing the library, reader, and discovery feed",
-        body: "Three primary surfaces were wireframed: the Library (personal collection), the Reader (core reading experience), and the Discovery Feed (human-curated, not algorithmic). The Reader posed the most challenge — balancing reading controls with invisibility. A swipe-up-from-bottom gesture replaced all visible navigation, surfacing settings only on deliberate interaction.",
-        insight:
-          "The progress indicator was moved from top to bottom after testing revealed users glanced down mid-sentence when it appeared at the top, breaking their flow.",
-        imgs: [
-          "https://images.unsplash.com/photo-1526050071463-2c476b162a4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-        ],
-        imgLayout: "wide",
-      },
-      {
-        phase: "04 / PROTOTYPE & TESTING",
-        title: "In-context testing at a coffee shop — 11 participants",
-        body: "Rather than a lab, I ran all usability sessions in a café to replicate realistic distraction levels. 11 participants completed four tasks: find a saved article, adjust typeface, share a highlight, and set a reading reminder. Quiet Mode (disabling all notifications during a session) was the single most-requested feature, and was built into v1.",
-        imgs: [
-          "https://images.unsplash.com/photo-1748801583967-3038967d7279?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-        ],
-        imgLayout: "wide",
-      },
-      {
-        phase: "05 / FINAL DESIGN",
-        title: "Typography-first, chrome-last",
-        body: "The final design uses a variable serif (Fraunces) for body copy that shifts weight and optical size based on ambient light detection. Line length is capped at 66 characters — the documented sweet spot for adult reading. The Quiet Mode activates a full-screen focus state, silences all OS notifications, and dims the interface to 40% — returnable with a long press.",
-        imgs: [
-          "https://images.unsplash.com/photo-1758598305146-0adb6799dbae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-        ],
-        imgLayout: "wide",
-      },
-    ],
     impacts: [
-      { value: "18,000", label: "Downloads in the first week" },
-      { value: "14", label: "Countries — App of the Day" },
-      { value: "89%", label: "30-day retention" },
+      { value: "", label: "Improved usability across touch-enabled devices" },
+      { value: "", label: "Enabled product expansion to new user segments" },
+      { value: "", label: "Increased consistency and scalability across the interface" },
     ],
     outcome: {
       metrics: [
-        { label: "Avg. Session Length", value: "+41%" },
-        { label: "30-Day Retention", value: "89%" },
-        { label: "App Store Rating", value: "4.7 / 5" },
-        { label: "Articles Read / User", value: "3.2×" },
+        { label: "Improved usability across touch-enabled devices", value: "" },
+        { label: "Enabled product expansion to new user segments", value: "" },
+        { label: "Increased consistency and scalability across the interface", value: "" },
       ],
       summary:
         "Folio Daily launched to 18,000 downloads in its first week, driven almost entirely by word-of-mouth. The typography-first approach was cited in over 200 App Store reviews. It was featured by Apple as 'App of the Day' in 14 countries.",
     },
+    confidential: true,
+    confidentialNote:
+      "This case study includes confidential product work. The project remains in the portfolio for context, but detailed process, constraints, and outcomes are intentionally obscured.",
+
   },
   {
     slug: "totuga",

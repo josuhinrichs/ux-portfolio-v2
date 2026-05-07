@@ -16,7 +16,7 @@ export function Dock() {
       transition={{ duration: 0.7, delay: 0.4 }}
       className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50"
     >
-      <div className="flex items-end gap-2 px-3 py-2 rounded-2xl bg-white/60 dark:bg-neutral-900/60 backdrop-blur-xl border border-white/40 dark:border-neutral-700/40 shadow-2xl">
+      <div className="flex items-end gap-2 px-3 py-2 rounded-2xl bg-white/38 dark:bg-neutral-900/60 backdrop-blur-xl border border-white/40 dark:border-neutral-700/40 shadow-2xl">
         {items.map((it) => (
           <motion.a
             key={it.label}
