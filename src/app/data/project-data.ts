@@ -10,6 +10,7 @@ export interface ProcessPhase {
 export interface ProjectOutcome {
   metrics?: { label: string; value: string }[];
   summary?: string;
+  title?: string;
 }
 
 export interface RejectedDirection {
@@ -52,15 +53,21 @@ export const projects: Project[] = [
     title: "Lenovo Diagnostics for ARM",
     shortTitle: "Lenovo Diagnostics",
     desc: "Desktop diagnostics application shipped with Lenovo Arm laptops, supporting 100,000+ monthly users in technical troubleshooting scenarios.",
-    fullDesc: "Led UX/UI strategy for a complex diagnostics product used across multiple hardware environments\nRedesigned diagnostic workflows, improving usability and reducing cognitive load in technical scenarios\nImproved accessibility compliance by 60% through audits and targeted redesign initiatives\nDeveloped and governed a scalable Design System in Figma (variables, libraries, component architecture), accelerating development iterations by 20% \\Collaborated with engineers and stakeholders in Agile environments to align product and technical constraints",
-      // "Development and governance of a scalable Design System using advanced Figma features (variables, libraries, component architecture), accelerating iteration and ensuring cross-team consistency.\nAdaptation of desktop interfaces to touchscreen contexts, enhancing interaction reliability across hardware environments.\nCoordination and leadership of a UX/UI team, defining experience goals per release cycle and aligning design decisions with engineering and business stakeholders in Agile environments.",
+    fullDesc:
+      "Led UX/UI strategy for a complex diagnostics product used across multiple hardware environments\nRedesigned diagnostic workflows, improving usability and reducing cognitive load in technical scenarios\nImproved accessibility compliance by 60% through audits and targeted redesign initiatives\nDeveloped and governed a scalable Design System in Figma (variables, libraries, component architecture), accelerating development iterations by 20% \\Collaborated with engineers and stakeholders in Agile environments to align product and technical constraints",
+    // "Development and governance of a scalable Design System using advanced Figma features (variables, libraries, component architecture), accelerating iteration and ensuring cross-team consistency.\nAdaptation of desktop interfaces to touchscreen contexts, enhancing interaction reliability across hardware environments.\nCoordination and leadership of a UX/UI team, defining experience goals per release cycle and aligning design decisions with engineering and business stakeholders in Agile environments.",
     img: "src/app/imgs/CoverLDAR.png",
     bg: "#dfe7f5",
     accentColor: "#4a6fa5",
     role: "Product Designer leading UX/UI strategy, design systems, and workflow redesign.",
     tools: ["Figma", "FigJam", "Jira", "Confluence", "AMP", "UX Research"],
     timeline: "Confidential",
-    deliverables: ["Redesigned design system", "Visual identity", "QoL UX improvements", "Accessibility"],
+    deliverables: [
+      "Redesigned design system",
+      "Visual identity",
+      "QoL UX improvements",
+      "Accessibility",
+    ],
     confidential: true,
     confidentialNote:
       "This case study includes confidential product work. The project remains in the portfolio for context, but detailed process, constraints, and outcomes are intentionally obscured.",
@@ -84,26 +91,33 @@ export const projects: Project[] = [
     slug: "lenovo-diagnostics",
     tag: "EDITORIAL UX/UI · MOBILE APP",
     title: "Lenovo Diagnostics Project (NDA)",
-    shortTitle: "Lenovo Diagnostics",
+    shortTitle: "Lenovo Diagnostics Project (NDA)",
     desc: "Confidential initiative focused on adapting a desktop diagnostics experience to new interaction models, devices, and user profiles.",
-    fullDesc: "Adapted desktop interfaces to touchscreen environments, improving interaction reliability across devices.\nLed a major interface overhaul targeting a new user demographic, redefining interaction patterns and UI structure.\nDeveloped and scaled a Visual Identity and a Design System to ensure consistency across evolving product requirements.",
-      // "Folio Daily is a reading experience shaped through typography, interface pacing, and focused mobile interaction design. It aims to provide a calm and immersive reading environment, free from distractions and interruptions.",
+    fullDesc:
+      "Adapted desktop interfaces to touchscreen environments, improving interaction reliability across devices.\nLed a major interface overhaul targeting a new user demographic, redefining interaction patterns and UI structure.\nDeveloped and scaled a Visual Identity and a Design System to ensure consistency across evolving product requirements.",
+    // "Folio Daily is a reading experience shaped through typography, interface pacing, and focused mobile interaction design. It aims to provide a calm and immersive reading environment, free from distractions and interruptions.",
     img: "src/app/imgs/CoverLD.png",
     bg: "#ecdcc8",
     accentColor: "#8b6a3e",
     role: "Product Designer responsible for interface strategy, system scalability, and interaction redesign.",
     timeline: "Confidential",
-    tools: ["Figma", "Principle", "Typetura", "Notion"],
+    tools: ["Figma", "FigJam", "Jira", "Confluence", "AMP", "UX Research"],
     impacts: [
       { value: "", label: "Improved usability across touch-enabled devices" },
       { value: "", label: "Enabled product expansion to new user segments" },
-      { value: "", label: "Increased consistency and scalability across the interface" },
+      {
+        value: "",
+        label: "Increased consistency and scalability across the interface",
+      },
     ],
     outcome: {
       metrics: [
         { label: "Improved usability across touch-enabled devices", value: "" },
         { label: "Enabled product expansion to new user segments", value: "" },
-        { label: "Increased consistency and scalability across the interface", value: "" },
+        {
+          label: "Increased consistency and scalability across the interface",
+          value: "",
+        },
       ],
       summary:
         "Folio Daily launched to 18,000 downloads in its first week, driven almost entirely by word-of-mouth. The typography-first approach was cited in over 200 App Store reviews. It was featured by Apple as 'App of the Day' in 14 countries.",
@@ -111,7 +125,6 @@ export const projects: Project[] = [
     confidential: true,
     confidentialNote:
       "This case study includes confidential product work. The project remains in the portfolio for context, but detailed process, constraints, and outcomes are intentionally obscured.",
-
   },
   {
     slug: "totuga",
@@ -128,7 +141,12 @@ export const projects: Project[] = [
     team: "Team of 4: 1 PM, 1 iOS engineer, 1 backend engineer, me (all design)",
     timeline: "14 weeks",
     tools: ["Figma", "Illustrator", "Principle", "Maze"],
-    deliverables: ["iOS App", "Android App", "Design System", "Mascot & Illustration Guidelines"],
+    deliverables: [
+      "iOS App",
+      "Android App",
+      "Design System",
+      "Mascot & Illustration Guidelines",
+    ],
     challenge:
       "Most financial literacy tools for children are either boring (spreadsheet-style trackers) or too abstract (they teach concepts without real money mechanics). Totuga set out to give children a real sense of ownership over money — through a digital wallet they control, savings goals they set, tasks they choose, and an adventure world that rewards real-world financial behaviour.",
     challengeQuote:
@@ -144,15 +162,18 @@ export const projects: Project[] = [
     rejectedDirections: [
       {
         title: "Points-only economy (no real money)",
-        reason: "Children quickly recognised fake currencies as meaningless. Real balance amounts, even small ones, created significantly more engagement in prototype testing.",
+        reason:
+          "Children quickly recognised fake currencies as meaningless. Real balance amounts, even small ones, created significantly more engagement in prototype testing.",
       },
       {
         title: "Parent-controlled reward gating",
-        reason: "Parents approved it; children didn't. When kids had no agency over timing or amounts, they lost interest within two sessions. Replaced with a parent-approval flow that still centred the child.",
+        reason:
+          "Parents approved it; children didn't. When kids had no agency over timing or amounts, they lost interest within two sessions. Replaced with a parent-approval flow that still centred the child.",
       },
       {
         title: "Realistic financial UI (no mascot)",
-        reason: "A clean, adult-style wallet interface tested well with parents and terribly with children. The turtle companion became the emotional anchor that made the financial concepts feel safe and approachable.",
+        reason:
+          "A clean, adult-style wallet interface tested well with parents and terribly with children. The turtle companion became the emotional anchor that made the financial concepts feel safe and approachable.",
       },
     ],
     process: [
@@ -223,113 +244,116 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: "north-dashboard",
-    tag: "B2B SAAS · DASHBOARD SYSTEMS",
-    title: "North Dashboard",
-    shortTitle: "North",
-    desc: "A B2B dashboard redesign focused on information architecture, reusable components, and scalable UX for distributed teams.",
+    slug: "ceara-government-portal",
+    tag: "GOVERNMENT PLATFORM · DIGITAL SERVICES",
+    title: "Government of Ceará Digital Platform",
+    shortTitle: "Ceará Digital",
+    desc: "Redesign of Ceará’s official digital services platform focused on accessibility, navigation efficiency, and citizen-centered experiences.",
     fullDesc:
-      "North Dashboard is a B2B dashboard redesign focused on information architecture, reusable components, and scalable UX for distributed teams. It aims to provide a consistent and efficient user experience across the entire product suite, supporting the needs of distributed teams.",
-    img: "https://images.unsplash.com/photo-1634084462412-b54873c0a56d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    bg: "#1a1a2e",
-    accentColor: "#7b9cda",
-    role: "UX/UI & Systems Designer — information architecture, component logic, and scalable interface patterns",
-    team: "Team of 9: 1 design manager, 2 product designers (I led), 5 engineers, 1 PM",
-    timeline: "11 weeks",
-    tools: ["Figma", "Storybook", "Tokens Studio", "Zeroheight"],
-    deliverables: ["Design System (200 components)", "Dashboard UI", "Token Library", "Documentation Site"],
+      "Ceará Digital is the official Government of Ceará digital services platform, serving millions of citizens across institutional content and public services. The redesign focused on improving usability, accessibility, information architecture, and service discoverability while establishing a scalable Design System for future government products.",
+    img: "YOUR_IMAGE_HERE",
+    bg: "#0d3b66",
+    accentColor: "#4da3ff",
+    role: "UX Designer — information architecture, accessibility, interface redesign, prototyping, and design system contribution",
+    team: "IRIS Lab multidisciplinary team working alongside government stakeholders and developers",
+    timeline: "Research, redesign, and iterative development cycle",
+    tools: [
+      "Figma",
+      "UX Research",
+      "Prototyping",
+      "Information Architecture",
+      "Design Systems",
+    ],
+    deliverables: [
+      "Portal Redesign",
+      "Government Design System",
+      "User Flows",
+      "Responsive Interfaces",
+      "UI Components",
+      "Documentation",
+    ],
     challenge:
-      "North's founding team had been building a distributed-team command centre for two years — but with no design system. Each screen was a snowflake. Engineers were spending 30% of sprint time on UI inconsistencies. The product needed to scale to enterprise without rebuilding from scratch. I was brought in to architect a token-based system, align the existing UI, and ship 200 production-ready components in 11 weeks.",
+      "The existing government platform presented fragmented navigation, low service discoverability, accessibility limitations, and an institutional structure disconnected from how citizens actually search for services. The redesign aimed to simplify access to public services and create a more intuitive experience for all users — including elderly citizens with low digital literacy.",
     challengeQuote:
-      '"We have 40 shades of the same grey across 200 screens. Nobody knows which one is correct anymore."',
+      '"The goal was simple: even grandmothers should be able to access services faster."',
     constraints: [
-      "Could not pause feature delivery during the rebuild — system had to ship alongside",
-      "Two existing front-end stacks (React + a legacy Ember surface) had to share tokens",
-      "Enterprise customers contractually locked to current IA for 6 months — change had to be opt-in",
-      "11-week deadline tied to Series B fundraise demos",
+      "Large-scale government ecosystem serving millions of citizens",
+      "Accessibility and usability standards required across all interfaces",
+      "Needed to preserve alignment with official government branding",
+      "Complex service structure involving multiple departments and user profiles",
+      "Responsive experience required across desktop and mobile devices",
     ],
     hypothesis:
-      "If we invert the workflow — building the component inventory before any screens — we'll eliminate 90% of UI inconsistency arguments and recoup the upfront cost within 2 sprints of adoption.",
+      "Reorganizing services around user needs and life contexts instead of institutional structures would improve discoverability, navigation efficiency, and accessibility for a broader range of citizens.",
     rejectedDirections: [
       {
-        title: "Adopt an off-the-shelf system (Material / Radix)",
-        reason: "Faster start, but enterprise customers needed white-label theming the libraries couldn't support cleanly.",
+        title: "Institution-centered navigation",
+        reason:
+          "Users struggled to understand government organizational structures and service ownership.",
       },
       {
-        title: "Single-tier flat token structure",
-        reason: "Simpler to author but couldn't represent semantic intent — broke down the moment dark mode was added.",
+        title: "Dense visual layout",
+        reason:
+          "The previous interface created cognitive overload and reduced readability for non-technical users.",
       },
       {
-        title: "Icon-only collapsed left rail",
-        reason: "Failed for users with 8+ modules in moderated testing. Replaced with hybrid top-tabs + contextual rail.",
+        title: "Complex multi-level navigation",
+        reason:
+          "Deep menu hierarchies increased friction and made essential services harder to discover.",
       },
     ],
     process: [
       {
-        phase: "01 / DISCOVERY",
-        title: "Shadow sessions, component audit, 200+ redundant clicks per day",
-        body: "I spent two weeks embedded with six distributed teams across three time zones. Each day I shadowed a power-user session, documenting every click, every context switch, and every moment of friction. A component audit of the existing product revealed 87 unique button variants, 40+ grey values, and no shared spacing scale.",
+        phase: "01 / RESEARCH & IDEATION",
+        title: "Desk research, benchmarking, and citizen-centered discovery",
+        body: "The redesign process started with desk research, benchmarking, brainstorming sessions, and analysis of the previous platform. Navigation patterns, service discoverability issues, and accessibility barriers were mapped to better understand citizen behavior and pain points.",
         insight:
-          "Shadow finding: the average power-user performed 200+ redundant navigation clicks per day — primarily because similar actions lived in different places across modules.",
-        imgs: [
-          "https://images.unsplash.com/photo-1565687950692-520fa91191d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-          "https://images.unsplash.com/photo-1576153192281-d558108925bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-        ],
-        imgLayout: "duo",
-      },
-      {
-        phase: "02 / CONCEPT SPRINTS",
-        title: "14 whiteboard sessions with engineering",
-        body: "Rather than design in isolation, I ran 14 collaborative whiteboard sessions with the engineering leads over three weeks. We competed on component APIs — debating whether a component should accept children or configuration props, which variant dimensions mattered, and where to draw boundaries. This upfront investment halved the number of design-engineering disagreements during build.",
-        imgs: [
-          "https://images.unsplash.com/photo-1576153192396-180ecef2a715?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-        ],
+          "Users searched for services based on real-life situations rather than government organizational structures.",
+        imgs: ["YOUR_IMAGE_HERE"],
         imgLayout: "wide",
       },
       {
-        phase: "03 / TOKEN ARCHITECTURE",
-        title: "Component inventory first. Screens second.",
-        body: "I inverted the typical workflow — instead of designing screens and extracting components, I built the component inventory first, then composed screens from it. The token architecture uses three tiers: primitive (raw values), semantic (role-based), and component (scoped overrides). This structure supports light/dark, three density modes, and white-label theming from a single source of truth.",
+        phase: "02 / INFORMATION ARCHITECTURE",
+        title: "Simplifying navigation and restructuring services",
+        body: "The information architecture was reorganized to prioritize public services and simplify navigation flows. The team redesigned the main menu, highlighted essential services and news content, and introduced a life-event navigation model grouping services around citizen profiles and real-world scenarios.",
         insight:
-          "Defining the spacing scale first (a 4px base grid with named steps) eliminated 90% of alignment arguments before any screens were designed.",
-        imgs: [
-          "https://images.unsplash.com/photo-1676285437303-744ef82a0263?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-        ],
+          "Life-event navigation improved discoverability and reduced friction when accessing public services.",
+        imgs: ["YOUR_IMAGE_HERE"],
         imgLayout: "wide",
       },
       {
-        phase: "04 / PROTOTYPE & TESTING",
-        title: "12 power-users. Navigation IA rebuilt twice.",
-        body: "Moderated sessions with 12 enterprise power-users revealed that the primary navigation model — a left-rail with icon-only collapsed state — failed for users managing more than 8 modules. I designed and tested two alternative IA patterns before landing on a hybrid: persistent top-level tabs with a contextual side rail that appears per-module.",
-        imgs: [
-          "https://images.unsplash.com/photo-1748801583967-3038967d7279?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-        ],
+        phase: "03 / VISUAL DESIGN & PROTOTYPING",
+        title: "Accessible interfaces and responsive experiences",
+        body: "The visual redesign focused on readability, accessibility, and interaction clarity. Colors were softened, contrast levels adjusted, and spacing improved to reduce cognitive overload and create a more welcoming interface. High-fidelity responsive prototypes were created across the platform.",
+        insight:
+          "Accessibility improvements benefited not only users with impairments, but also elderly and low-literacy users.",
+        imgs: ["YOUR_IMAGE_HERE"],
         imgLayout: "wide",
       },
       {
-        phase: "05 / FINAL DESIGN",
-        title: "200 components. Three density modes. Full keyboard nav.",
-        body: "The shipped system includes 200 components across 8 categories, documented in Storybook and Zeroheight. Every component supports light and dark themes, three density modes (compact, default, comfortable), and full keyboard navigation to WCAG AA standard. The token library exports directly to CSS variables, Tailwind config, and iOS/Android native tokens.",
-        imgs: [
-          "https://images.unsplash.com/photo-1720962158883-b0f2021fb51e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-        ],
+        phase: "04 / DESIGN SYSTEM & HANDOFF",
+        title: "Scalable UI foundations for government products",
+        body: "The project culminated in the development of a scalable Government of Ceará Design System, supporting consistency across institutional platforms and future digital services. Documentation and iterative handoff cycles were conducted alongside development teams.",
+        imgs: ["YOUR_IMAGE_HERE"],
         imgLayout: "wide",
       },
     ],
     impacts: [
-      { value: "−73%", label: "Reduction in daily navigation clicks" },
-      { value: "200", label: "Components shipped in 11 weeks" },
-      { value: "800+", label: "Enterprise users onboarded" },
+      { value: "Millions", label: "Citizens supported" },
+      { value: "Improved", label: "Service discoverability" },
+      { value: "Accessible", label: "Navigation experience" },
     ],
     outcome: {
+      title: "Expected Outcome",
       metrics: [
-        { label: "Daily Clicks Reduced", value: "−73%" },
-        { label: "Delivery Time", value: "11 wks" },
-        { label: "Teams Onboarded", value: "800+" },
-        { label: "Components Shipped", value: "200" },
+        { value: "+30%", label: "Average engagement target" },
+        { value: "+40%", label: "Recurring users target" },
+        { value: "+1", label: "Engaged sessions per active user" },
+        { value: "+30%", label: "Average engagement time target" },
+        { value: "-10%", label: "Bounce rate target" },
       ],
       summary:
-        "North shipped the redesigned dashboard to its full user base within 3 months of the system's completion. Engineer sprint velocity increased by 38% in the quarter following adoption. The design system received an honourable mention at the 2024 Awwwards.",
+        "The redesigned Ceará Digital platform introduced a more intuitive, accessible, and citizen-centered experience for public digital services. Through improvements in information architecture, accessibility, navigation flows, and scalable UI foundations, the project helped modernize the government’s digital ecosystem and simplify access to essential services.",
     },
   },
   {
@@ -347,7 +371,12 @@ export const projects: Project[] = [
     team: "Team of 4: 2 founders (client), 1 contract iOS dev, me (design + research)",
     timeline: "8 weeks",
     tools: ["Figma", "Illustrator", "Procreate", "Useberry"],
-    deliverables: ["Brand Identity", "Packaging System", "iOS Ordering App", "Print Collateral"],
+    deliverables: [
+      "Brand Identity",
+      "Packaging System",
+      "iOS Ordering App",
+      "Print Collateral",
+    ],
     challenge:
       "Mira Coffee is a single-origin roastery in Lisbon run by two founders who source directly from farms in Ethiopia and Colombia. Their coffee is exceptional — but their identity was a stock logo and a Squarespace site. They needed a brand that would sit confidently next to specialty roasters in Tokyo and London, while remaining human enough to feel local.",
     challengeQuote:
@@ -363,21 +392,25 @@ export const projects: Project[] = [
     rejectedDirections: [
       {
         title: "Botanical illustration mark",
-        reason: "Beautiful but indistinguishable from 4 other Lisbon roasters in the audit. Too generic.",
+        reason:
+          "Beautiful but indistinguishable from 4 other Lisbon roasters in the audit. Too generic.",
       },
       {
         title: "Geometric 'M' monogram",
-        reason: "Confident but too cold — founders wanted warmth without being rustic. Cut after first review.",
+        reason:
+          "Confident but too cold — founders wanted warmth without being rustic. Cut after first review.",
       },
       {
         title: "Algorithmic recommended menu",
-        reason: "Felt off-brand for a roastery built on origin storytelling. Replaced with editorial-style origin cards.",
+        reason:
+          "Felt off-brand for a roastery built on origin storytelling. Replaced with editorial-style origin cards.",
       },
     ],
     process: [
       {
         phase: "01 / DISCOVERY",
-        title: "12 competitors analysed. 3 focus groups. One clear opportunity.",
+        title:
+          "12 competitors analysed. 3 focus groups. One clear opportunity.",
         body: "I analysed 12 specialty coffee brands for visual language, packaging material, and digital presence. Three focus groups with Lisbon-based coffee enthusiasts identified a gap: most local roasters were either minimalist-sterile (looks cold) or maximalist-rustic (looks cheap). The opportunity was warm precision — craft with confidence.",
         insight:
           "Focus group insight: participants associated kraft paper packaging with quality, but only when paired with a considered, structured typographic system — not handwritten labels.",

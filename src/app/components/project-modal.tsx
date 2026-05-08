@@ -307,7 +307,7 @@ export function ProjectModal({
 
                     {/* Outcome */}
                     {project.outcome && (
-                      <Section title="Outcome">
+                      <Section title={project.outcome.title ?? "Outcome"}>
                         {project.outcome.metrics && project.outcome.metrics.length > 0 && (
                           <div
                             className={`grid gap-3 ${
