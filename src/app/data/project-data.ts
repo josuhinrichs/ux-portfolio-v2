@@ -46,9 +46,6 @@ export interface Project {
   confidentialNote?: string;
 }
 
-const projectImage = (filename: string) =>
-  `${import.meta.env.BASE_URL}project-data/${filename}`;
-
 export const projects: Project[] = [
   {
     slug: "ldar",
@@ -59,7 +56,7 @@ export const projects: Project[] = [
     fullDesc:
       "Led UX/UI strategy for a complex diagnostics product used across multiple hardware environments\nRedesigned diagnostic workflows, improving usability and reducing cognitive load in technical scenarios\nImproved accessibility compliance by 60% through audits and targeted redesign initiatives\nDeveloped and governed a scalable Design System in Figma (variables, libraries, component architecture), accelerating development iterations by 20% \\Collaborated with engineers and stakeholders in Agile environments to align product and technical constraints",
     // "Development and governance of a scalable Design System using advanced Figma features (variables, libraries, component architecture), accelerating iteration and ensuring cross-team consistency.\nAdaptation of desktop interfaces to touchscreen contexts, enhancing interaction reliability across hardware environments.\nCoordination and leadership of a UX/UI team, defining experience goals per release cycle and aligning design decisions with engineering and business stakeholders in Agile environments.",
-    img: projectImage("CoverLDAR.png"),
+    img: "./CoverLDAR.webp",
     bg: "#dfe7f5",
     accentColor: "#4a6fa5",
     role: "Product Designer leading UX/UI strategy, design systems, and workflow redesign.",
@@ -99,7 +96,7 @@ export const projects: Project[] = [
     fullDesc:
       "Adapted desktop interfaces to touchscreen environments, improving interaction reliability across devices.\nLed a major interface overhaul targeting a new user demographic, redefining interaction patterns and UI structure.\nDeveloped and scaled a Visual Identity and a Design System to ensure consistency across evolving product requirements.",
     // "Folio Daily is a reading experience shaped through typography, interface pacing, and focused mobile interaction design. It aims to provide a calm and immersive reading environment, free from distractions and interruptions.",
-    img: projectImage("CoverLD.png"),
+    img: "./CoverLD.webp",
     bg: "#ecdcc8",
     accentColor: "#8b6a3e",
     role: "Product Designer responsible for interface strategy, system scalability, and interaction redesign.",
@@ -254,7 +251,7 @@ export const projects: Project[] = [
     desc: "Redesign of Ceará’s official digital services platform focused on accessibility, navigation efficiency, and citizen-centered experiences.",
     fullDesc:
       "Ceará Digital is the official Government of Ceará digital services platform, serving millions of citizens across institutional content and public services. The redesign focused on improving usability, accessibility, information architecture, and service discoverability while establishing a scalable Design System for future government products.",
-    img: projectImage("cegov-logo.png"),
+    img: "./cegov-logo.webp",
     bg: "#0d3b66",
     accentColor: "#4da3ff",
     role: "UX Designer — information architecture, accessibility, interface redesign, prototyping, and design system contribution",
@@ -312,7 +309,7 @@ export const projects: Project[] = [
         body: "The redesign process started with desk research, benchmarking, brainstorming sessions, and analysis of the previous platform. Navigation patterns, service discoverability issues, and accessibility barriers were mapped to better understand citizen behavior and pain points.",
         insight:
           "Users searched for services based on real-life situations rather than government organizational structures.",
-        imgs: [projectImage("cegov-research.png")],
+        imgs: ["./cegov-research.webp"],
         imgLayout: "wide",
       },
       {
@@ -321,7 +318,7 @@ export const projects: Project[] = [
         body: "The information architecture was reorganized to prioritize public services and simplify navigation flows. The team redesigned the main menu, highlighted essential services and news content, and introduced a life-event navigation model grouping services around citizen profiles and real-world scenarios.",
         insight:
           "Life-event navigation improved discoverability and reduced friction when accessing public services.",
-        imgs: [projectImage("cegov-flow.png")],
+        imgs: ["./cegov-flow.webp"],
         imgLayout: "wide",
       },
       {
@@ -330,14 +327,14 @@ export const projects: Project[] = [
         body: "The visual redesign focused on readability, accessibility, and interaction clarity. Colors were softened, contrast levels adjusted, and spacing improved to reduce cognitive overload and create a more welcoming interface. High-fidelity responsive prototypes were created across the platform.",
         insight:
           "Accessibility improvements benefited not only users with impairments, but also elderly and low-literacy users.",
-        imgs: [projectImage("cegov-ui.png")],
+        imgs: ["./cegov-ui.webp"],
         imgLayout: "wide",
       },
       {
         phase: "04 / DESIGN SYSTEM & HANDOFF",
         title: "Scalable UI foundations for government products",
         body: "The project culminated in the development of a scalable Government of Ceará Design System, supporting consistency across institutional platforms and future digital services. Documentation and iterative handoff cycles were conducted alongside development teams.",
-        imgs: [projectImage("cegov-designsystem.png")],
+        imgs: ["./cegov-designsystem.webp"],
         imgLayout: "wide",
       },
     ],
@@ -367,7 +364,7 @@ export const projects: Project[] = [
     desc: "A technical platform designed to demonstrate geolocation APIs through interactive simulations, usability-focused workflows, and developer-oriented experiences.",
     fullDesc:
       "Maplink Viewer is a B2B platform created to demonstrate the practical capabilities of Maplink’s geolocation APIs through interactive simulations and real-world scenarios. The project focused on technical usability, API visualization, workflow clarity, and developer-oriented UX for enterprise clients and sales teams.",
-    img: projectImage("maplink-logo.png"),
+    img: "./maplink-logo.webp",
     bg: "#120D26",
     accentColor: "#6C50D8",
     role: "UX/UI Designer — user flows, interface design, usability testing, and technical UX",
@@ -446,7 +443,7 @@ export const projects: Project[] = [
           "The interface system combined technical clarity with a modern visual structure. Light and dark themes, typography hierarchy, color systems, alerts, and interaction states were documented to support consistency across the platform.",
         insight:
           "Visual hierarchy and structured spacing significantly improved readability in technical workflows.",
-        imgs: [projectImage("maplink-ui.png")],
+        imgs: ["./maplink-ui.webp"],
         imgLayout: "wide",
       },
       {
