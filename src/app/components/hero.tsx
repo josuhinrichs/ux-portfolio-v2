@@ -3,6 +3,29 @@ import { MacWindow } from "./mac-window";
 import { ArrowUpRight, MapPin } from "lucide-react";
 
 export function Hero() {
+  const marqueeItems = [
+    "Product Design",
+    "·",
+    "User Research",
+    "·",
+    "Design Systems",
+    "·",
+    "Prototyping",
+    "·",
+    "Figma",
+    "·",
+    "Strategy",
+    "·",
+    "Remote-First",
+    "·",
+    "Accessibility",
+    "·",
+    "Brazilian | German",
+    "·",
+    "M.Sc in progress",
+    "·",
+  ];
+
   return (
     <section className="px-6 md:px-12 pt-14 md:pt-28 pb-12 relative">
       <div className="max-w-6xl mx-auto">
@@ -168,16 +191,20 @@ export function Hero() {
         {/* Marquee */}
         <div className="mt-6 overflow-hidden border-y border-dashed border-neutral-300 dark:border-neutral-700 py-3 -mx-6 md:-mx-12">
           <motion.div
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-            className="flex gap-8 whitespace-nowrap"
+            animate={{ x: [0, "-50%"] }}
+            transition={{ duration: 55, repeat: Infinity, ease: "linear" }}
+            className="flex w-max whitespace-nowrap"
             style={{ fontSize: "14px" }}
           >
-            {Array.from({ length: 2 }).flatMap((_, k) =>
-              ["Product Design", "·", "User Research", "·", "Design Systems", "·", "Prototyping", "·", "Motion", "·", "Strategy", "·", "Remote-First", "·"].map((w, i) => (
-                <span key={`${k}-${i}`} className="text-neutral-600 dark:text-neutral-400">{w}</span>
-              ))
-            )}
+            {[0, 1].map((copy) => (
+              <div key={copy} className="flex items-center gap-8 pr-8">
+                {marqueeItems.map((w, i) => (
+                  <span key={`${copy}-${i}`} className="text-neutral-600 dark:text-neutral-400">
+                    {w}
+                  </span>
+                ))}
+              </div>
+            ))}
           </motion.div>
         </div>
       </div>

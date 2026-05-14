@@ -4,11 +4,11 @@ import { MacWindow } from "./mac-window";
 const items = [
   {
     quote:
-      "Josué raised the bar for the Government of Ceará Portal. Through citizen-centered design, he helped simplify complex public services into a more fluid and modern experience. A designer focused on creating real impact through digital transformation.",
-    name: "Luiza Clara",
-    role: "General Coordinator · IRIS Lab",
-    initials: "LC",
-    color: "from-purple-200 to-indigo-200 dark:from-purple-900/40 dark:to-indigo-900/40",
+      "Working with Josué was a very positive experience. In addition to being highly creative and intelligent, he demonstrates natural leadership and knows how to guide projects and teams with confidence and commitment. He takes on complex challenges seriously and is always looking to improve in order to deliver the best possible results. Beyond that, he brings a positive energy and good sense of humor that makes the work environment lighter and more enjoyable.",
+    name: "Caio Oliveira",
+    role: "2nd Tech Lead · LSBD | Lenovo",
+    initials: "CO",
+    color: "from-emerald-200 to-teal-200 dark:from-emerald-900/40 dark:to-teal-900/40",
   },
   {
     quote: "Josué is a super collaborative guy, always ready to jump in with the team on any challenge. His energy and partnership are contagious, making the work a lot lighter and more enjoyable.",
@@ -17,14 +17,14 @@ const items = [
     initials: "LN",
     color: "from-amber-200 to-rose-200 dark:from-amber-900/40 dark:to-rose-900/40",
   },
-  // {
-  //   quote:
-  //     "Clear thinker, beautiful craft, zero ego. Josué elevated our entire product surface area in 6 months.",
-  //   name: "Caio Oliveira",
-  //   role: "2nd Tech Lead · LSBD | Lenovo",
-  //   initials: "CO",
-  //   color: "from-emerald-200 to-teal-200 dark:from-emerald-900/40 dark:to-teal-900/40",
-  // },
+  {
+    quote:
+      "Josué raised the bar for the Government of Ceará Portal. Through citizen-centered design, he helped simplify complex public services into a more fluid and modern experience. A designer focused on creating real impact through digital transformation.",
+    name: "Luiza Clara",
+    role: "General Coordinator · IRIS Lab",
+    initials: "LC",
+    color: "from-purple-200 to-indigo-200 dark:from-purple-900/40 dark:to-indigo-900/40",
+  },
 ];
 
 export function Testimonials() {
@@ -45,7 +45,7 @@ export function Testimonials() {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {items.map((t, i) => (
             <motion.div
               key={t.name}

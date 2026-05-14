@@ -247,7 +247,7 @@ export const projects: Project[] = [
     slug: "ceara-government-portal",
     tag: "GOVERNMENT PLATFORM · DIGITAL SERVICES",
     title: "Government of Ceará Digital Platform",
-    shortTitle: "Ceará Digital",
+    shortTitle: "ce.gov.br",
     desc: "Redesign of Ceará’s official digital services platform focused on accessibility, navigation efficiency, and citizen-centered experiences.",
     fullDesc:
       "Ceará Digital is the official Government of Ceará digital services platform, serving millions of citizens across institutional content and public services. The redesign focused on improving usability, accessibility, information architecture, and service discoverability while establishing a scalable Design System for future government products.",
@@ -364,7 +364,7 @@ export const projects: Project[] = [
     desc: "A technical platform designed to demonstrate geolocation APIs through interactive simulations, usability-focused workflows, and developer-oriented experiences.",
     fullDesc:
       "Maplink Viewer is a B2B platform created to demonstrate the practical capabilities of Maplink’s geolocation APIs through interactive simulations and real-world scenarios. The project focused on technical usability, API visualization, workflow clarity, and developer-oriented UX for enterprise clients and sales teams.",
-    img: "YOUR_IMAGE_HERE",
+    img: "src/app/imgs/maplink-logo.png",
     bg: "#120D26",
     accentColor: "#6C50D8",
     role: "UX/UI Designer — user flows, interface design, usability testing, and technical UX",
@@ -423,8 +423,8 @@ export const projects: Project[] = [
           "The project started with interviews, competitive analysis, user journey mapping, and technical workflow evaluation. Research focused on understanding how enterprise users, specialists, and sales teams interacted with API-based products and demonstrations.",
         insight:
           "Users needed to see real API behavior in practical scenarios rather than abstract product explanations.",
-        imgs: ["YOUR_IMAGE_HERE"],
-        imgLayout: "wide",
+        // imgs: ["YOUR_IMAGE_HERE"],
+        // imgLayout: "wide",
       },
       {
         phase: "02 / IDEATION & FLOW DESIGN",
@@ -433,8 +433,8 @@ export const projects: Project[] = [
           "Wireframes and interaction flows were developed to support complex API operations while maintaining clarity and usability. The platform simulated practical use cases involving routing, toll calculation, geolocation, and logistics scenarios for enterprise clients.",
         insight:
           "Technical users valued transparency and direct access to generated JSON requests.",
-        imgs: ["YOUR_IMAGE_HERE"],
-        imgLayout: "wide",
+        // imgs: ["YOUR_IMAGE_HERE"],
+        // imgLayout: "wide",
       },
       {
         phase: "03 / VISUAL DESIGN & STYLE GUIDE",
@@ -443,7 +443,7 @@ export const projects: Project[] = [
           "The interface system combined technical clarity with a modern visual structure. Light and dark themes, typography hierarchy, color systems, alerts, and interaction states were documented to support consistency across the platform.",
         insight:
           "Visual hierarchy and structured spacing significantly improved readability in technical workflows.",
-        imgs: ["YOUR_IMAGE_HERE"],
+        imgs: ["src/app/imgs/maplink-ui.png"],
         imgLayout: "wide",
       },
       {
@@ -453,21 +453,21 @@ export const projects: Project[] = [
           "High-fidelity prototypes were tested through usability sessions involving realistic API tasks and request-generation scenarios. Thinking-aloud sessions, heuristic evaluations, and System Usability Scale (SUS) testing helped validate interaction clarity and technical workflows.",
         insight:
           "The ability to generate and copy real JSON requests increased perceived usefulness and trust among technical users.",
-        imgs: ["YOUR_IMAGE_HERE"],
-        imgLayout: "wide",
+        // imgs: ["YOUR_IMAGE_HERE"],
+        // imgLayout: "wide",
       },
     ],
     impacts: [
-      { value: "86", label: "System Usability Scale (SUS)" },
+      { value: "85+", label: "System Usability Scale (SUS)" },
       { value: "Enterprise", label: "Technical user focus" },
       { value: "Interactive", label: "API visualization experience" },
     ],
     outcome: {
       metrics: [
-        { label: "SUS Score", value: "86 / Excellent" },
-        { label: "Primary Audience", value: "Technical Specialists" },
-        { label: "Core Experience", value: "Interactive API Simulation" },
-        { label: "Main Focus", value: "Geolocation & Routing APIs" },
+        { label: "SUS Score", value: "85+" },
+        { label: "By Main Users", value: "Solution Validated" },
+        { label: "Core Experience", value: "Interactive APIs" },
+        { label: "Goal Achieved", value: "Geolocation & Routing APIs" },
       ],
       summary:
         "The Maplink Viewer transformed API demonstrations into interactive and practical experiences for enterprise users. Through technical UX improvements, usability testing, and realistic API workflows, the platform helped make complex geolocation services more tangible, understandable, and actionable for potential customers.",
