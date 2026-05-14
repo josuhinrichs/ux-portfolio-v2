@@ -10,7 +10,7 @@ const BehanceIcon = ({ size = 14 }: { size?: number }) => (
 
 const links = [
   { icon: Mail, label: "josue2001marinho@gmail.com", href: "mailto:josue2001marinho@gmail.com", color: "bg-rose-100 dark:bg-rose-950/40" },
-  { icon: Linkedin, label: "linkedin/josuehinrichs", href: "www.linkedin.com/in/josuhinrichs/", color: "bg-blue-100 dark:bg-blue-950/40" },
+  { icon: Linkedin, label: "linkedin/josuehinrichs", href: "https://www.linkedin.com/in/josuhinrichs/", target: "_blank", color: "bg-blue-100 dark:bg-blue-950/40" },
 ];
 
 export function Contact() {
@@ -43,7 +43,8 @@ export function Contact() {
             </motion.a>
 
             <motion.a
-              href="mailto:josue2001marinho@gmail.com"
+              href="https://drive.google.com/file/d/18yOdg_NJcfC1tRXGN_-AVnRC_M6--ziT/view?usp=sharing"
+              target="_blank"
               whileHover={{ scale: 1.05, rotate: -1 }}
               whileTap={{ scale: 0.97 }}
               className="whitespace-nowrap group inline-flex items-center gap-2 mt-8 px-7 py-4 rounded-full bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 shadow-2xl"
@@ -59,11 +60,15 @@ export function Contact() {
                 <motion.a
                   key={l.label}
                   href={l.href}
-                  whileHover={{ y: -2 }}
+                  target={l.target}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: i * 0.05 }}
+                  transition={{
+                  opacity: { duration: 0.35, delay: i * 0.05, ease: "easeOut" },
+                  y: { duration: 0.35, delay: i * 0.05, ease: "easeOut" },
+                  scale: { type: "spring", stiffness: 320, damping: 26, mass: 0.7 },
+                  }}
                   className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/70 dark:bg-neutral-900/70 backdrop-blur hover:bg-white dark:hover:bg-neutral-900 transition-all text-left"
                   style={{ fontSize: "13px" }}
                 >

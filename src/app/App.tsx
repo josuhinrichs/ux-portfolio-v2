@@ -11,7 +11,7 @@ import { CustomCursor } from "../imports/CustomCursor";
 export default function App() {
   return (
     <div id="top" className="min-h-screen w-full bg-gradient-to-b from-neutral-100 via-neutral-50 to-stone-100 dark:from-neutral-950 dark:to-black text-neutral-900 dark:text-neutral-100 overflow-x-hidden">
-      {/* <CustomCursor /> */}
+      <CustomCursor />
       <div
         aria-hidden
         className="fixed inset-0 -z-10 opacity-60"

@@ -46,7 +46,7 @@ export function ProjectModal({
             {/* macOS window chrome */}
             <div className="sticky top-0 z-20 flex items-center gap-3 px-4 py-3 border-b border-neutral-200 dark:border-neutral-800 bg-white/90 dark:bg-neutral-900/90 backdrop-blur">
               {/* Traffic lights */}
-              <div className="flex items-center gap-1.5 shrink-0">
+              {/* <div className="flex items-center gap-1.5 shrink-0">
                 <button
                   onClick={onClose}
                   className="w-3 h-3 rounded-full bg-red-400 hover:bg-red-500 transition-colors"
@@ -54,7 +54,7 @@ export function ProjectModal({
                 />
                 <div className="w-3 h-3 rounded-full bg-yellow-400 opacity-60" />
                 <div className="w-3 h-3 rounded-full bg-green-400 opacity-60" />
-              </div>
+              </div> */}
 
               <div className="flex-1 text-center text-neutral-500 flex items-center justify-center gap-2" style={{ fontSize: "13px" }}>
                 <span className="truncate max-w-[200px] md:max-w-none">
@@ -307,7 +307,7 @@ export function ProjectModal({
 
                     {/* Outcome */}
                     {project.outcome && (
-                      <Section title="Outcome">
+                      <Section title={project.outcome.title ?? "Outcome"}>
                         {project.outcome.metrics && project.outcome.metrics.length > 0 && (
                           <div
                             className={`grid gap-3 ${
