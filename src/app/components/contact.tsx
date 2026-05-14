@@ -43,7 +43,7 @@ export function Contact() {
             </motion.a>
 
             <motion.a
-              href="https://drive.google.com/file/d/1tl5OoL41ALYdUYCf0nmoW2lHB301z-d9/view?usp=sharing"
+              href="https://drive.google.com/file/d/1iWG-S_HoeU-V4aMPEGWER_rWGNzjV2Mq/view?usp=sharing"
               target="_blank"
               whileHover={{ scale: 1.05, rotate: -1 }}
               whileTap={{ scale: 0.97 }}
