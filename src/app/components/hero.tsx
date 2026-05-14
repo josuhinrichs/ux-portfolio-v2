@@ -170,9 +170,12 @@ export function Hero() {
                 <div className="w-full h-full rounded-xl bg-neutral-100 dark:bg-neutral-800 overflow-hidden">
                   {/* Replace this src with your real photo */}
                   <img
-                    src="./profile.jpg"
+                    src={`${import.meta.env.BASE_URL}profile.jpg`}
                     alt="Josué Hinrichs"
                     className="w-full h-full object-cover object-[center_top]"
+                    loading="eager"
+                    decoding="async"
+                    fetchPriority="high"
                   />
                 </div>
                 <motion.div
